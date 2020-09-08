@@ -46,6 +46,22 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f0r-ru-pfr">
+                                <rect key="frame" x="0.0" y="812" width="414" height="1"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="vxt-Nk-KGA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2v9-ja-kPN">
+                                <rect key="frame" x="364" y="814" width="50" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="mVc-zW-ILo"/>
+                                </constraints>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -53,13 +69,19 @@
                             <constraint firstItem="OOS-RF-QXZ" firstAttribute="leading" secondItem="R0M-uD-FYC" secondAttribute="leading" id="7UG-rC-Blt"/>
                             <constraint firstItem="Uyf-Ra-RGL" firstAttribute="top" secondItem="BfD-cp-tAm" secondAttribute="bottom" id="8fI-LI-Ruh"/>
                             <constraint firstItem="BfD-cp-tAm" firstAttribute="leading" secondItem="R0M-uD-FYC" secondAttribute="leading" id="FFq-hG-ulK"/>
+                            <constraint firstItem="2v9-ja-kPN" firstAttribute="top" secondItem="OOS-RF-QXZ" secondAttribute="bottom" constant="2" id="Fdm-gr-1RX"/>
                             <constraint firstItem="R0M-uD-FYC" firstAttribute="trailing" secondItem="OOS-RF-QXZ" secondAttribute="trailing" id="HQl-y3-n0a"/>
+                            <constraint firstItem="2v9-ja-kPN" firstAttribute="bottom" secondItem="R0M-uD-FYC" secondAttribute="bottom" id="Mu8-dr-t1R"/>
                             <constraint firstItem="R0M-uD-FYC" firstAttribute="trailing" secondItem="Uyf-Ra-RGL" secondAttribute="trailing" id="N61-dq-kym"/>
                             <constraint firstItem="OOS-RF-QXZ" firstAttribute="top" secondItem="R0M-uD-FYC" secondAttribute="top" constant="250" id="Nca-MD-xw8"/>
+                            <constraint firstItem="2v9-ja-kPN" firstAttribute="trailing" secondItem="R0M-uD-FYC" secondAttribute="trailing" id="PpT-pZ-dVm"/>
                             <constraint firstItem="R0M-uD-FYC" firstAttribute="bottom" secondItem="OOS-RF-QXZ" secondAttribute="bottom" constant="50" id="Rb6-y0-zbU"/>
                             <constraint firstItem="R0M-uD-FYC" firstAttribute="trailing" secondItem="BfD-cp-tAm" secondAttribute="trailing" id="Rkg-04-jkb"/>
+                            <constraint firstItem="f0r-ru-pfr" firstAttribute="leading" secondItem="R0M-uD-FYC" secondAttribute="leading" id="Syh-Rh-kz4"/>
+                            <constraint firstItem="f0r-ru-pfr" firstAttribute="top" secondItem="OOS-RF-QXZ" secondAttribute="bottom" id="WJg-1D-IQp"/>
                             <constraint firstItem="LSF-Ec-cvl" firstAttribute="top" secondItem="R0M-uD-FYC" secondAttribute="top" id="WLv-te-bmy"/>
                             <constraint firstItem="LSF-Ec-cvl" firstAttribute="leading" secondItem="R0M-uD-FYC" secondAttribute="leading" id="erS-wO-aUa"/>
+                            <constraint firstItem="R0M-uD-FYC" firstAttribute="trailing" secondItem="f0r-ru-pfr" secondAttribute="trailing" id="fMT-EM-R1U"/>
                             <constraint firstItem="R0M-uD-FYC" firstAttribute="trailing" secondItem="LSF-Ec-cvl" secondAttribute="trailing" id="jzt-sb-iGX"/>
                             <constraint firstItem="Uyf-Ra-RGL" firstAttribute="leading" secondItem="R0M-uD-FYC" secondAttribute="leading" id="vbB-B5-eam"/>
                             <constraint firstItem="OOS-RF-QXZ" firstAttribute="top" secondItem="Uyf-Ra-RGL" secondAttribute="bottom" id="xEb-If-Ybx"/>
@@ -70,12 +92,13 @@
                         <outlet property="currentLocationLb" destination="LSF-Ec-cvl" id="0jF-ma-Pks"/>
                         <outlet property="currentStatusLb" destination="BfD-cp-tAm" id="LWD-xJ-DxZ"/>
                         <outlet property="currentTempLb" destination="Uyf-Ra-RGL" id="cD7-ip-zlE"/>
+                        <outlet property="menuBtn" destination="2v9-ja-kPN" id="klb-sO-t3c"/>
                         <outlet property="table" destination="OOS-RF-QXZ" id="vnP-Nh-yFp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lOx-rP-gnd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="91" y="-87"/>
+            <point key="canvasLocation" x="89.855072463768124" y="-87.053571428571431"/>
         </scene>
     </scenes>
 </document>

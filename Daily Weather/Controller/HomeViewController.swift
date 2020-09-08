@@ -24,6 +24,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     
     override func viewDidLoad() {
+        menuBtn.setImage(UIImage(named: "menu.png"), for: .normal)
         table.register(HourlyTableViewCell.nib(), forCellReuseIdentifier: HourlyTableViewCell.identifier)
         table.register(WeatherTableViewCell.nib(), forCellReuseIdentifier: WeatherTableViewCell.identifier)
         table.register(TodayDetailTableViewCell.nib(), forCellReuseIdentifier: TodayDetailTableViewCell.identifier)
